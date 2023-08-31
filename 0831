@@ -1,0 +1,112 @@
+Client / Browser (HTML, CSS, JavaScript) : Data 발생, 서버에게 전송(요청) / Server ( WAS + java => Servlet/JSP, RDBMS)
+Servlet/JSP => Spring  /  JDBS => myBaits/JPA - 프레임워크
+
+# HTML - Web Browser에서 사용할 때에는 tag 사용
+
+- html: head - meta, title, ... / body - p, div, form, ...
+- 각각의 tag는 속성과 속성의 값이 존재
+
+- class, id: html의 속성
+
+- 주석: 모든  white space는 공백 하나(enter, tab, space) ex) 2-1.html
+- 머리글 (heading): 숫자가 커질수록 글자는 작아짐 <h1> ~ <h6> -> <h7> 썼을 때 어떻게 나오는지 한번 확인해보기
+
+- 목록형 요소: ul / ol -> li -> dl -> dt -> dd
+
+- table - HTML table 모델: thead -> tr -> td / tbody -> tr -> td / tfoot ...
+
+- 3-08. html에서 직접 이것저것 해보면서 적용 우선순위도 확인해보기
+
+- 이미지: 상대 경로와 절대 경로 구분하기
+
+- _self / _blank
+
+- 링크 요소 - #anchor / map
+
+  # Form control 요소
+  - <form> tag 하위에 위치
+  - 속성: method - *GET, POST -> 확실히 구분하기!!(길이 제한 유무, ...) / name / action
+~ p.73
+___________________________________________________________________________________________________________________________
+
+## WebUI (FrontEnd)
+1. html: 웹 구조 (화면 배치)
+2. css: 표현 (색상, 스타일 등)
+3. javascript: 기능 (이벤트 처리, 기능)
+    -- js F/W (js lib) : jquery, bootstrap 등 
+
+## HTML
+-- static contents (정적 콘텐츠)
+-- tcp/ip, http, html, browser(번역기 역할)(크롬, 엣지, 사파리 등)
+-- cross browser : 기본 브라우저 (크롬)
+-- html5 / css3: 웹 표준화
+  >> html4에서 js가 처리했던 부분이 기본 기능으로 제공됨
+  >> 추가 태그, 제거 태그 등
+-- html4
+-- web service: CS
+  >> web client: 브라우저
+  >> web servier: VSCode (Live Server), Backend (Tomcat WAS)
+
+## HTML tag
+-- block tag
+  >> System.out.println("a");
+  >> 자동으로 블럭 (라인) 이동
+  >> h1~h6, P, ul, ol, div(css)
+-- inline tag
+  >> System.out.print("a");
+  >> 라인 이동 X
+  >> img, a(앵커), span(css), 
+
+-- 태그형식: 
+1. 내용 있는 태그: <시작>내용</종료>    
+
+2. 내용 없는 태그: empty elemnet
+  엔터, 텝 등 화이트스페이스에도 데이터가 들어가기 때문에 유의!
+  <시작></종료>
+  <시작 />
+
+-- 태그 형식: 
+  <시작태그명 속성명 = 속성값 속성명 = "속성값" 속성명 = '속성값'>
+  </종류태그명>
+  
+  => 시작태그명과 종료태그명은 동일해야함
+  => 속성은 시작태그명 뒤에 속성명 = 속성값 형식으로 다중
+  => 마크드 속성: 속성명 => (html5 표준) 속성명 = '속성값'
+  => readOnly = "readOnly"
+
+-- 크기 지정: 높이, 넓이, 이미지, 테이블, 글꼴 등
+  >> %: 80%
+  >> em: 1em, 0.5em, 0.7em, 1.5em (기본 글꼴 기반 배수 지정)
+  >> px: 해상도 기반, 300px, 500px
+
+-- 색상: 글꼴, 백그라운드, 보더라인 등
+  >> 색상명: red, blue, ...
+  >> RGB: 255, 247, 282
+  >> Ox: #223355
+
+## 태그에 부가되는 css 관련 속성
+-- id: 해당 html 문서에서 unique (js에서 dom, css 사용)
+-- class: 그룹(공통)
+-- style: 현재 태그에 css 적용 (간단하게 테스트하는 목적)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
