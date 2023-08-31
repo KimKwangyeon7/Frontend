@@ -170,7 +170,7 @@ ________________________________________________________________________________
   1. <input type="입력항목형식" name="서버에서사용자입력정보추출위한변수명-form에서 unique">
         id="css위한속성-html페이지 unique" class="css위한속성"
      >
-  2. <select name="">
+  2. <select name="">: 선택한 항모의 데이터를 전송, 다중 선택도 때에 따라 가능
         <option value="">레이블</option> (레이블과 value가 동일하다면 생략 가능)
         <option value=""></option>
      </select>
@@ -188,8 +188,14 @@ ________________________________________________________________________________
   >> button: 버튼 (javascript 이벤트 처리)
   >> image="버튼이미지.png": 이미지를 버튼으로 사용하기 보다는 CSS를 이용해서 버튼 꾸미기
 
+## div와 span 차이점 확인해보기
 
-
-
+## 파일 경로 설정: 이미지, css, js 파일
+-- 절대경로: https:??ip:port/context-name~
+-- 컨텍스트 root 기반 상대경로: /sub-folder/filename.ext
+-- 현재 리소스 기반 상대 경로: 
+  > 하위폴더: ./sub-folder/filename.ext
+  > 상위폴더: ../sub-folder/filename.ext
+  
 
 
