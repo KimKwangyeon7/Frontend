@@ -118,13 +118,75 @@ ________________________________________________________________________________
 ## 장애인 차별 금지법
 -- 스크린 리더 -> b와 strong 차이
 
+## 테이블 (표 만들기)
+-- <table></table>
+  >> <caption>테이블제목</caption>
+  >> <thead>, <tbody>, <tfoot>: css
+  >> <tr>: 행
+  >> <td>: 열
+  >> <th>: 열(제목) - 굵은 글씨, 가운데 정렬(자동 설정)
+-- 속성:
+  >> colspan: 열 합치는 숫자, <td>, <th>
+  >> rowspan: 행 합치는 숫자, <td>, <th>
+  >> width, height, bgcolor 등
+  >> border, cell-padding, cell-margin: css
 
+## 클라이언트 => 서버 데이터 전송 방식
+1. Query String
+  요청url?key=value&key2=value&key3=value3
+2. <form> 입력 양식 이용
+3. javascript 내장함수: prompt()
 
+## 클라이언트 => 서버 http 요청방식
+1. GET 요청 방식:
+  - WEB 기본 요청 방식
+  - URL 직접 입력
+  - <A> 태그
+  - javascript: location.href="url"
+  - <form method="get">, method 미지정
+  
+2. POST 요청 방식
+  - <form method="POST">
+## 서버 http 요청 방식
+1. GET 방식
+  - Query String 형식으로 url에 첨부되어 전송 
+  - 전송 형식: url?key=value&key2=value
+  - 길이 제한
+  - 보안 이슈 발생
+  - 캐싱 가능
+  - 보안 관련한 중요 데이터 전송 방식으로 사용해서는 안됨
+  - 검색어 입력, 즐겨찾기 등록 요청 시에 주로 사용
 
+2. POST 방식
+  - http 메세지 body에 첨부되어 전송
+  - 사용자 볼 수 없음, 길이 제한 없음
+  - 캐싱 되지 않음
+  - 보안 관련 데이터 (로그인, 회원가입), 대량의 데이터 전송 시에 사용
+  - <form method="POST"> 지정 시에만 가능한 방식
 
+## 입력양식
+-- <form method="GET|POST" action="서버요청처리-url">
+-- 입력양식 입력항목
+  1. <input type="입력항목형식" name="서버에서사용자입력정보추출위한변수명-form에서 unique">
+        id="css위한속성-html페이지 unique" class="css위한속성"
+     >
+  2. <select name="">
+        <option value="">레이블</option> (레이블과 value가 동일하다면 생략 가능)
+        <option value=""></option>
+     </select>
+  3. <textarea name=""></textarea>
 
+-- 입력항목형식: <input type="입력항목형식">
+  >> text: 한 줄 입력 데이터
+  >> password: 한 줄 입력 보안 데이터: * 대체 (비밀번호, 주민번호, 카드번호, 휴대폰번호)
+  >> radio: 단일 선택 (name="" value="값지정")
+  >> checkbox: 다중 선택 (name="" value="값지정")
 
+  >> submit: 요청 전용 버튼 (value="버튼레이블명-로그인") (<form action="url">)
+  >> reset: 초기화 전용 버튼 (form 양식을 초기화, 사용자 입력 초기화), (value="버튼레이블명-취소")
 
+  >> button: 버튼 (javascript 이벤트 처리)
+  >> image="버튼이미지.png": 이미지를 버튼으로 사용하기 보다는 CSS를 이용해서 버튼 꾸미기
 
 
 
