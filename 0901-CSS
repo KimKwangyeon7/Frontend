@@ -4,6 +4,7 @@
   >> 선언: 선택자에 적용될 스타일을 작성 / 중괄호로 감싸며, 속성과 값으로 이루어짐
 -- 스타일 시트 적용: 외부 -> link, @import 등 경우에 따라 사용 / 내부 -> style 사용 => 내부 스타일 시트를 우선 적용(가까이 있는 것)
 -- CSS 상속
+-- 복합 선택자: element element{} / element>element{} 구분하기 / element+element{} / element~element{}
 
 
 
