@@ -19,6 +19,7 @@ ________________________________________________________________________________
     >> select >> option
     >> textarea
     >> Text, Password, CheckBox, Radio, Submit, Reset, Button, ...
+    >> 입력항목에 대한 객체들 데이터: 입력항목객체.value 속성 => 문자열 객체(String) => 문자열 길이: length 변수 (java에서는 메서드)
 > Location(location)
 > History(history)
 > ...
@@ -38,6 +39,87 @@ ________________________________________________________________________________
   >> parseFloat(arg): 실수형 형변환
   >> isNaN(): 문자데이터 여부 체킹 => 문자열이면 true 
   >> eval("문자열수식 또는 json형식의문자열") 
+
+## 이벤트
+-- 사용자가 어떠한 동작을 했을 때, 또는 브라우저(상태)의 무언가가 변화되었을 때
+-- 구성요소
+  (1) 이벤트 소스: 버튼, 이미지, 키보드, 브라우저(문서) 등
+  (2) 이벤트: click, double click, focus, change, submit, reset, mouseover 등
+  (3) 이벤트 처리: onXXX이벤트, onClick, onFoucus, onKeydown, onKeyup, onchange, onload 등
+
+## DOM (Document Object Model)
+-- document.폼이름.입력항목이름
+
+-- document.getElementById("아이디"): Node
+-- document.getElementsByClassName(name): NodeList
+-- document.getElementsByTagName(name): NodeList
+
+-- document.querySelector("#css-selector-id"): Node
+-- document.querySelectoAll("css-selector"): NodeList
+
+## 데이터타입
+-- number
+-- string
+-- boolean
+  >> false, 0 , "", null, undefined
+-- object: null(값이 없는 객체)
+-- undefined: 변수만 선언하고 값을 할당 X
+
+## 데이터 타입 체킹 방법
+-- typeof 변수명/값
+-- typeof(변수명/값)
+
+## 변수 선언 방법
+-- 주의사헝: 변수 타입을 지정 X!!! ( 타입은 설정하는 값에 의해서 동적으로 변경됨)
+-- var 변수명 = 값; // 값에 의해서 데이터 타입이 자동으로 결정됨!!!
+-- var 변수명;     // 어떤 값이 올 지 모르기 때문에 undefined
+-- 변수명 = 값;    // 함수 내부에서 선언한 전역변수인지 변수에 값 할당??
+-- ES6: 
+  let 변수명 = 값; // block scope
+
+## 변수
+-- 전역변수
+  >> 선언위치: 
+    => function() {} 외부 선언
+    => funtcion() [ 내부에 var을 붙이지 않고 선언하면 전역변수 ]
+-- 지역변수
+  >> 선언위치:
+    => funtion() { // 지역변수 내부 선언 }
+-- 상수: ES6 
+  >> const 상수명 = 상수값;
+
+## 제어문
+-- 조건문, 반복문: Java와 동일
+
+## 연산자
+== / != : 값 비교 ex) "100" == 100
+=== / !== : 값과 타입까지 비교
+
+## 함수 선언 방법
+1. 이름이 있는 함수
+  function 함수명() {
+    // 수행문
+  }
+  function 함수명(매개변수명1, 매개변수명2) { // 타입 지정 X!!
+    // 수행문
+    // 필요 시에 반환 값
+    reuturn 값;
+  }
+2. let 함수명 = function() {
+      // 수행문
+   }
+3. window.onLoad = function() {
+    // 윈도우가 로드되었을 때 이벤트 처리(딱 한번 수행하면 되니까 익명함수) 
+  }
+4. 
+
+## 함수 호출 방법
+1. 이름이 있는 함수 
+  let 변수명 = 함수명([params]);
+2. 콜백 함수
+  >> 해당 상황이 되었을 때 미리 동기화되어 있는 함수 자동 호출 수행
+  >> 콜백 함수명;
+
 
 
 
