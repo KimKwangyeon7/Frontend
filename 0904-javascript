@@ -12,9 +12,32 @@
 __________________________________________________________________________________________________________________________________________
 ## JavaScript 객체
 -- Tree 구조
--- Window(window)
+-- Window(window): 최상위 객체, window 생략 가능
   > Doucument(documnet)
   > Form(name="폼이름" id="아이디")
-    >> input type="text, password, checkbox"
-    >> 
+    >> input type="text(Text), password(Password), checkbox" (name="" id="")
+    >> select >> option
+    >> textarea
+    >> Text, Password, CheckBox, Radio, Submit, Reset, Button, ...
+> Location(location)
+> History(history)
+> ...
+
 -- 내장객체: 자동으로 제공되는 객체
+-- 객체:
+  > 메서드(함수)
+  > 속성(변수)
+  > 이벤트
+
+## Window(window): 최상위 객체, window 생략 가능
+-- window 내장함수
+  >> alert('메세지-경고메세지, 확인모달메세지');
+  >> confirm('확인메세지' - ok/cancel) => true/false
+  >> prompt('메세지', '기본값'): js에서 사용자 데이터 입력
+  >> parseInt(arg): 정수형 형변환
+  >> parseFloat(arg): 실수형 형변환
+  >> isNaN(): 문자데이터 여부 체킹 => 문자열이면 true 
+  >> eval("문자열수식 또는 json형식의문자열") 
+
+
+
