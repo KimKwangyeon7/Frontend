@@ -125,8 +125,40 @@ ________________________________________________________________________________
    let html = element객체.innerHTML; (get 가져오기)
 -- element객체.innerText = "plain-text"
 
+## JSON(Java Script Object Notation)
+-- JavaScript 객체 표현 방법
+-- {key: value} 형식
+-- 단일 변수: {key: value}
+-- 단일 객체: {key1: value, key2: value, key-x: value}
+-- 배열: []
+-- 다중객체: 
+      { key: [
+          {key1: value, key2: value, key-x: value},
+          {key1: value, key2: value, key-x: value},
+          {key1: value, key2: value, key-x: value}
+      ]}
+-- 함수
+    {
+      key1: value,
+      key2: value,
+      key-x: value,
+      함수명: function() {
+          this.key1 + this.key2;
+      }
+    }
 
 
+
+## 사용자 객체 정의 방법
+-- json
+let 객체명 = {
+      key1: value,
+      key2: value,
+      key-x: value,
+      함수명: function() {
+          this.key1 + this.key2;
+      }    
+}
 
 
 
